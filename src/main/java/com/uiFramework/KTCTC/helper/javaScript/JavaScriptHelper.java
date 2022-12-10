@@ -41,7 +41,7 @@ public class JavaScriptHelper {
 	 * @param element
 	 */
 	public void scrollToElement(WebElement element){
-		
+
 		executeScript("window.scrollTo(arguments[0],arguments[1])",element.getLocation().x,element.getLocation().y);
 	}
 	

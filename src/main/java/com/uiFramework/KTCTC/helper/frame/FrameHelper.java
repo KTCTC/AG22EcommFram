@@ -37,4 +37,13 @@ public class FrameHelper {
 		driver.switchTo().frame(element);
 		
 	}
+	
+	
+	/**
+	 * This method switch back to main web page from frame
+	 */
+	public void switchToDefaultContent()
+	{
+		driver.switchTo().defaultContent();
+	}
 }

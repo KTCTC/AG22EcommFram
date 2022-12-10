@@ -16,7 +16,7 @@ public class ChromeBrowser {
 		ChromeOptions option = new ChromeOptions();
 		option.addArguments("--disable-popup-blocking");
 		option.addArguments("--start-maximized");
-		//option.addArguments("--incognito");
+		option.addArguments("--incognito");
 		//option.setBinary("/path/to/other/chrome/binary");
 		//option.addArguments("--headless");
 		option.addArguments("--no-sandbox");
@@ -59,6 +59,11 @@ public class ChromeBrowser {
 		WebDriver driver = obj.getChromeDriver(obj.getChromeOptions());
 		return driver;
 	}	
+	
+	public static void main(String[] args) {
+		
+		WebDriver driver = ChromeBrowser.getBrowserInstance();
+	}
 	
 
 }

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-skipped">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\91992\AppData\Local\Temp\testng-eclipse-564672783\testng-customsuite.xml</span>
+                    <span>C:\Users\91992\AppData\Local\Temp\testng-eclipse--1371120616\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,26 +93,70 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                    <span class="method-stats">9 methods, 4 failed,   5 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.SampleClass" hash-for-method="verifyUserCanLoginToFacebook">verifyUserCanLoginToFacebook</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyCountIsDecreasedByOneAfterDeletingCategory">verifyCountIsDecreasedByOneAfterDeletingCategory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.SampleClass" hash-for-method="verifyUserCanUploadFileSuccessFully">verifyUserCanUploadFileSuccessFully</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyExistingCategoryCanBeDeleted">verifyExistingCategoryCanBeDeleted</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifySuccessBannerIsDisplayedForDeletedCategory">verifySuccessBannerIsDisplayedForDeletedCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyUserCanEditExistingCategory">verifyUserCanEditExistingCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="successBannerIsDisplayedForEditedCategory">successBannerIsDisplayedForEditedCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyCountIsIncreasedByOneAfterAddigngNewCategory">verifyCountIsIncreasedByOneAfterAddigngNewCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyCountIsNotChangedAfterEditingExistingCategory">verifyCountIsNotChangedAfterEditingExistingCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifyNewCategoryCanBeAddedOnCategoryPage">verifyNewCategoryCanBeAddedOnCategoryPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="regression.InventoryCategoryTest" hash-for-method="verifySuccessBannerIsDisplayedForNewlyAddedCategory">verifySuccessBannerIsDisplayedForNewlyAddedCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -124,26 +168,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">regression.SampleClass</span>
+              <img src="failed.png"/>
+              <span class="class-name">regression.InventoryCategoryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserCanLoginToFacebook">
-                  </a> <!-- verifyUserCanLoginToFacebook -->
-                  <span class="method-name">verifyUserCanLoginToFacebook</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email&apos;]&quot;}
-  (Session info: headless chrome=108.0.5359.99)
+                  <a name="verifyCountIsDecreasedByOneAfterDeletingCategory">
+                  </a> <!-- verifyCountIsDecreasedByOneAfterDeletingCategory -->
+                  <span class="method-name">verifyCountIsDecreasedByOneAfterDeletingCategory</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;Showing 1&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-D2GVCL39&apos;, ip: &apos;172.20.10.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 434531bfdcbac58b3812697301ce3d9c
-*** Element info: {Using=name, value=email}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edabd8051bba1309a452e5b7f2645123
+*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Showing 1&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -155,21 +199,23 @@ Session ID: 434531bfdcbac58b3812697301ce3d9c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.uiFramework.KTCTC.common.CommonMethods.loginToApplication(CommonMethods.java:101)
-	at com.uiFramework.KTCTC.testbase.TestBase.beforeClassOfA(TestBase.java:49)
+	at com.uiFramework.KTCTC.Pages.InventoryCategoryPage.getCountOfRecordsOnCategoryPage(InventoryCategoryPage.java:99)
+	at regression.InventoryCategoryTest.verifyCountIsDecreasedByOneAfterDeletingCategory(InventoryCategoryTest.java:100)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(Unknown Source)
 	at org.testng.TestRunner.privateRun(TestRunner.java:764)
 	at org.testng.TestRunner.run(TestRunner.java:585)
@@ -192,18 +238,18 @@ Session ID: 434531bfdcbac58b3812697301ce3d9c
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserCanUploadFileSuccessFully">
-                  </a> <!-- verifyUserCanUploadFileSuccessFully -->
-                  <span class="method-name">verifyUserCanUploadFileSuccessFully</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;email&apos;]&quot;}
-  (Session info: headless chrome=108.0.5359.99)
+                  <a name="verifyExistingCategoryCanBeDeleted">
+                  </a> <!-- verifyExistingCategoryCanBeDeleted -->
+                  <span class="method-name">verifyExistingCategoryCanBeDeleted</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[contains(@class,&apos;delete&apos;)]&quot;}
+  (Session info: chrome=108.0.5359.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-D2GVCL39&apos;, ip: &apos;172.20.10.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 434531bfdcbac58b3812697301ce3d9c
-*** Element info: {Using=name, value=email}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edabd8051bba1309a452e5b7f2645123
+*** Element info: {Using=xpath, value=//button[contains(@class,&apos;delete&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -215,21 +261,108 @@ Session ID: 434531bfdcbac58b3812697301ce3d9c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.uiFramework.KTCTC.common.CommonMethods.loginToApplication(CommonMethods.java:101)
-	at com.uiFramework.KTCTC.testbase.TestBase.beforeClassOfA(TestBase.java:49)
+	at com.uiFramework.KTCTC.Pages.InventoryCategoryPage.deleteExistingCategoryOnCategoryPage(InventoryCategoryPage.java:117)
+	at regression.InventoryCategoryTest.verifyExistingCategoryCanBeDeleted(InventoryCategoryTest.java:83)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessBannerIsDisplayedForDeletedCategory">
+                  </a> <!-- verifySuccessBannerIsDisplayedForDeletedCategory -->
+                  <span class="method-name">verifySuccessBannerIsDisplayedForDeletedCategory</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Category deleted Banner is not displayed expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at regression.InventoryCategoryTest.verifySuccessBannerIsDisplayedForDeletedCategory(InventoryCategoryTest.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.runSuites(TestNG.java:1069)
+	at org.testng.TestNG.run(TestNG.java:1037)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserCanEditExistingCategory">
+                  </a> <!-- verifyUserCanEditExistingCategory -->
+                  <span class="method-name">verifyUserCanEditExistingCategory</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Edited category is not displayed on category page expected [true] but found [false],
+	Old category name is still displayed expected [false] but found [true]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at regression.InventoryCategoryTest.verifyUserCanEditExistingCategory(InventoryCategoryTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.util.ArrayList.forEach(Unknown Source)
 	at org.testng.TestRunner.privateRun(TestRunner.java:764)
 	at org.testng.TestRunner.run(TestRunner.java:585)
@@ -251,11 +384,54 @@ Session ID: 434531bfdcbac58b3812697301ce3d9c
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">regression.InventoryCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="successBannerIsDisplayedForEditedCategory">
+                  </a> <!-- successBannerIsDisplayedForEditedCategory -->
+                  <span class="method-name">successBannerIsDisplayedForEditedCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCountIsIncreasedByOneAfterAddigngNewCategory">
+                  </a> <!-- verifyCountIsIncreasedByOneAfterAddigngNewCategory -->
+                  <span class="method-name">verifyCountIsIncreasedByOneAfterAddigngNewCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCountIsNotChangedAfterEditingExistingCategory">
+                  </a> <!-- verifyCountIsNotChangedAfterEditingExistingCategory -->
+                  <span class="method-name">verifyCountIsNotChangedAfterEditingExistingCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewCategoryCanBeAddedOnCategoryPage">
+                  </a> <!-- verifyNewCategoryCanBeAddedOnCategoryPage -->
+                  <span class="method-name">verifyNewCategoryCanBeAddedOnCategoryPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySuccessBannerIsDisplayedForNewlyAddedCategory">
+                  </a> <!-- verifySuccessBannerIsDisplayedForNewlyAddedCategory -->
+                  <span class="method-name">verifySuccessBannerIsDisplayedForNewlyAddedCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\91992\AppData\Local\Temp\testng-eclipse-564672783\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\91992\AppData\Local\Temp\testng-eclipse--1371120616\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -264,7 +440,7 @@ Session ID: 434531bfdcbac58b3812697301ce3d9c
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;regression.SampleClass&quot;/&gt;
+      &lt;class name=&quot;regression.InventoryCategoryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -304,20 +480,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserCanLoginToFacebook')
-data.setCell(0, 2, 'regression.SampleClass')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'verifyExistingCategoryCanBeDeleted')
+data.setCell(0, 2, 'regression.InventoryCategoryTest')
+data.setCell(0, 3, 102792);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyUserCanUploadFileSuccessFully')
-data.setCell(1, 2, 'regression.SampleClass')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'verifySuccessBannerIsDisplayedForDeletedCategory')
+data.setCell(1, 2, 'regression.InventoryCategoryTest')
+data.setCell(1, 3, 12824);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyCountIsDecreasedByOneAfterDeletingCategory')
+data.setCell(2, 2, 'regression.InventoryCategoryTest')
+data.setCell(2, 3, 12669);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyUserCanEditExistingCategory')
+data.setCell(3, 2, 'regression.InventoryCategoryTest')
+data.setCell(3, 3, 12124);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyNewCategoryCanBeAddedOnCategoryPage')
+data.setCell(4, 2, 'regression.InventoryCategoryTest')
+data.setCell(4, 3, 2851);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyCountIsNotChangedAfterEditingExistingCategory')
+data.setCell(5, 2, 'regression.InventoryCategoryTest')
+data.setCell(5, 3, 652);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyCountIsIncreasedByOneAfterAddigngNewCategory')
+data.setCell(6, 2, 'regression.InventoryCategoryTest')
+data.setCell(6, 3, 182);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifySuccessBannerIsDisplayedForNewlyAddedCategory')
+data.setCell(7, 2, 'regression.InventoryCategoryTest')
+data.setCell(7, 3, 86);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'successBannerIsDisplayedForEditedCategory')
+data.setCell(8, 2, 'regression.InventoryCategoryTest')
+data.setCell(8, 3, 85);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -343,52 +547,138 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">regression.SampleClass</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">regression.InventoryCategoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">beforeClassOfA</span>
-                <span class="method-start">207 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">Z</span>
-                <span class="method-start">28145 ms</span>
+                <span class="method-start">323 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">28164 ms</span>
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyNewCategoryCanBeAddedOnCategoryPage())</span>
+                <span class="method-start">14297 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyUserCanUploadFileSuccessFully</span>
-                <span class="method-start">28167 ms</span>
+                <span class="method-name">verifyNewCategoryCanBeAddedOnCategoryPage</span>
+                <span class="method-start">14315 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">28174 ms</span>
+                <span class="method-name">afterMethod([TestResult name=verifyNewCategoryCanBeAddedOnCategoryPage status=SUCCESS method=InventoryCategoryTe...)</span>
+                <span class="method-start">17171 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">28180 ms</span>
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifySuccessBannerIsDisplayedForNewlyAddedCategory())</span>
+                <span class="method-start">17187 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyUserCanLoginToFacebook</span>
-                <span class="method-start">28181 ms</span>
+                <span class="method-name">verifySuccessBannerIsDisplayedForNewlyAddedCategory</span>
+                <span class="method-start">17188 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">28185 ms</span>
+                <span class="method-name">afterMethod([TestResult name=verifySuccessBannerIsDisplayedForNewlyAddedCategory status=SUCCESS method=Inventory...)</span>
+                <span class="method-start">17276 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyCountIsIncreasedByOneAfterAddigngNewCategory())</span>
+                <span class="method-start">17277 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCountIsIncreasedByOneAfterAddigngNewCategory</span>
+                <span class="method-start">17278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyCountIsIncreasedByOneAfterAddigngNewCategory status=SUCCESS method=InventoryC...)</span>
+                <span class="method-start">17462 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyUserCanEditExistingCategory())</span>
+                <span class="method-start">17465 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserCanEditExistingCategory</span>
+                <span class="method-start">17466 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyUserCanEditExistingCategory status=FAILURE method=InventoryCategoryTest.verif...)</span>
+                <span class="method-start">29596 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.successBannerIsDisplayedForEditedCategory())</span>
+                <span class="method-start">30299 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successBannerIsDisplayedForEditedCategory</span>
+                <span class="method-start">30300 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=successBannerIsDisplayedForEditedCategory status=SUCCESS method=InventoryCategoryTe...)</span>
+                <span class="method-start">30392 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyCountIsNotChangedAfterEditingExistingCategory())</span>
+                <span class="method-start">30395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCountIsNotChangedAfterEditingExistingCategory</span>
+                <span class="method-start">30397 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyCountIsNotChangedAfterEditingExistingCategory status=SUCCESS method=Inventory...)</span>
+                <span class="method-start">31050 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyExistingCategoryCanBeDeleted())</span>
+                <span class="method-start">31051 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyExistingCategoryCanBeDeleted</span>
+                <span class="method-start">31053 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyExistingCategoryCanBeDeleted status=FAILURE method=InventoryCategoryTest.veri...)</span>
+                <span class="method-start">133852 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifySuccessBannerIsDisplayedForDeletedCategory())</span>
+                <span class="method-start">134342 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySuccessBannerIsDisplayedForDeletedCategory</span>
+                <span class="method-start">134343 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifySuccessBannerIsDisplayedForDeletedCategory status=FAILURE method=InventoryCat...)</span>
+                <span class="method-start">147168 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void regression.InventoryCategoryTest.verifyCountIsDecreasedByOneAfterDeletingCategory())</span>
+                <span class="method-start">148168 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyCountIsDecreasedByOneAfterDeletingCategory</span>
+                <span class="method-start">148168 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyCountIsDecreasedByOneAfterDeletingCategory status=FAILURE method=InventoryCat...)</span>
+                <span class="method-start">160839 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">28191 ms</span>
+                <span class="method-start">161338 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuiteMethod</span>
-                <span class="method-start">28278 ms</span>
+                <span class="method-start">162592 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

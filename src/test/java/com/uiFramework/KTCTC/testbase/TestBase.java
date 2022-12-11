@@ -39,22 +39,22 @@ public class TestBase {
 		extent = ExtentManager.getInstance();
 	}
 	
-	  @BeforeClass public void beforeClassOfA() { driver =
-	  ChromeBrowser.getBrowserInstance();
+	  @BeforeClass 
+	  public void beforeClassOfA() {
+	  driver = ChromeBrowser.getBrowserInstance();
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  driver.manage().deleteAllCookies(); //driver.manage().window().maximize();
+	  driver.manage().deleteAllCookies();
 	  test = extent.createTest(getClass().getSimpleName());
 	  driver.get(proObj.getPropertyValueFromFile("baseURL"));
 	  cmObj.acceptPrivateConnectionWarningIfPresent(driver);
-	  cmObj.loginToApplication(driver,
-	  proObj.getPropertyValueFromFile("adminNumber"),proObj.
-	  getPropertyValueFromFile("adminPass")); }
+	  cmObj.loginToApplication(driver,proObj.getPropertyValueFromFile("adminNumber"),proObj.getPropertyValueFromFile("adminPass")); 
+	  }
 	 
 	
 		
 	@BeforeMethod
 	public void beforeMethod(Method method){
-		//test.log(Status.INFO, method.getName()+" **************test started***************");
+		test.log(Status.INFO, method.getName()+" **************test started***************");
 		
 	}
 	
@@ -76,7 +76,7 @@ public class TestBase {
 			test.log(Status.SKIP, result.getName()+" is skipped");
 			
 		}
-		//test.log(Status.INFO,result.getName()+" **************test Finished***************");
+		test.log(Status.INFO,result.getName()+" **************test Finished***************");
 		
 		
 	}

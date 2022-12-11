@@ -1,118 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="4" ignored="0" total="9" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27999" started-at="2022-12-10T21:25:38 IST" finished-at="2022-12-10T21:26:06 IST">
+  <suite name="Default suite" duration-ms="162241" started-at="2022-12-11T21:47:29 IST" finished-at="2022-12-11T21:50:12 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27999" started-at="2022-12-10T21:25:38 IST" finished-at="2022-12-10T21:26:06 IST">
-      <class name="regression.SampleClass">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:regression.SampleClass@27a8c74e]" name="beforeSuite" is-config="true" duration-ms="193" started-at="2022-12-10T21:25:38 IST" finished-at="2022-12-10T21:25:38 IST">
+    <test name="Default test" duration-ms="162241" started-at="2022-12-11T21:47:29 IST" finished-at="2022-12-11T21:50:12 IST">
+      <class name="regression.InventoryCategoryTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeSuite" is-config="true" duration-ms="279" started-at="2022-12-11T21:47:29 IST" finished-at="2022-12-11T21:47:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="FAIL" signature="beforeClassOfA()[pri:0, instance:regression.SampleClass@27a8c74e]" name="beforeClassOfA" is-config="true" duration-ms="27927" started-at="2022-12-10T21:25:38 IST" finished-at="2022-12-10T21:26:06 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
-  (Session info: headless chrome=108.0.5359.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-D2GVCL39', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 434531bfdcbac58b3812697301ce3d9c
-*** Element info: {Using=name, value=email}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
-  (Session info: headless chrome=108.0.5359.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-D2GVCL39', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 434531bfdcbac58b3812697301ce3d9c
-*** Element info: {Using=name, value=email}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-at org.openqa.selenium.By$ByName.findElement(By.java:284)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.uiFramework.KTCTC.common.CommonMethods.loginToApplication(CommonMethods.java:101)
-at com.uiFramework.KTCTC.testbase.TestBase.beforeClassOfA(TestBase.java:49)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="beforeClassOfA()[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeClassOfA" is-config="true" duration-ms="13919" started-at="2022-12-11T21:47:29 IST" finished-at="2022-12-11T21:47:43 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassOfA -->
-        <test-method status="SKIP" signature="Z()[pri:0, instance:regression.SampleClass@27a8c74e]" name="Z" is-config="true" duration-ms="-1670687766326" started-at="2022-12-10T21:26:06 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Z -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.SampleClass@27a8c74e]" name="beforeMethod" is-config="true" duration-ms="-1670687766345" started-at="2022-12-10T21:26:06 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeMethod" is-config="true" duration-ms="17" started-at="2022-12-11T21:47:43 IST" finished-at="2022-12-11T21:47:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.InventoryCategoryTest.verifyNewCategoryCanBeAddedOnCategoryPage()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="verifyUserCanUploadFileSuccessFully()[pri:1, instance:regression.SampleClass@27a8c74e]" name="verifyUserCanUploadFileSuccessFully" duration-ms="0" started-at="2022-12-10T21:26:06 IST" finished-at="2022-12-10T21:26:06 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="verifyNewCategoryCanBeAddedOnCategoryPage()[pri:1, instance:regression.InventoryCategoryTest@5f683daf]" name="verifyNewCategoryCanBeAddedOnCategoryPage" duration-ms="2851" started-at="2022-12-11T21:47:43 IST" finished-at="2022-12-11T21:47:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewCategoryCanBeAddedOnCategoryPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterMethod" is-config="true" duration-ms="2" started-at="2022-12-11T21:47:46 IST" finished-at="2022-12-11T21:47:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewCategoryCanBeAddedOnCategoryPage status=SUCCESS method=InventoryCategoryTest.verifyNewCategoryCanBeAddedOnCategoryPage()[pri:1, instance:regression.InventoryCategoryTest@5f683daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-11T21:47:46 IST" finished-at="2022-12-11T21:47:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.InventoryCategoryTest.verifySuccessBannerIsDisplayedForNewlyAddedCategory()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifySuccessBannerIsDisplayedForNewlyAddedCategory()[pri:2, instance:regression.InventoryCategoryTest@5f683daf]" name="verifySuccessBannerIsDisplayedForNewlyAddedCategory" duration-ms="86" started-at="2022-12-11T21:47:46 IST" finished-at="2022-12-11T21:47:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessBannerIsDisplayedForNewlyAddedCategory -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterMethod" is-config="true" duration-ms="0" started-at="2022-12-11T21:47:46 IST" finished-at="2022-12-11T21:47:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessBannerIsDisplayedForNewlyAddedCategory status=SUCCESS method=InventoryCategoryTest.verifySuccessBannerIsDisplayedForNewlyAddedCategory()[pri:2, instance:regression.InventoryCategoryTest@5f683daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-12-11T21:47:46 IST" finished-at="2022-12-11T21:47:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.InventoryCategoryTest.verifyCountIsIncreasedByOneAfterAddigngNewCategory()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyCountIsIncreasedByOneAfterAddigngNewCategory()[pri:3, instance:regression.InventoryCategoryTest@5f683daf]" name="verifyCountIsIncreasedByOneAfterAddigngNewCategory" duration-ms="182" started-at="2022-12-11T21:47:46 IST" finished-at="2022-12-11T21:47:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountIsIncreasedByOneAfterAddigngNewCategory -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-12-11T21:47:47 IST" finished-at="2022-12-11T21:47:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCountIsIncreasedByOneAfterAddigngNewCategory status=SUCCESS method=InventoryCategoryTest.verifyCountIsIncreasedByOneAfterAddigngNewCategory()[pri:3, instance:regression.InventoryCategoryTest@5f683daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-12-11T21:47:47 IST" finished-at="2022-12-11T21:47:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.InventoryCategoryTest.verifyUserCanEditExistingCategory()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="verifyUserCanEditExistingCategory()[pri:4, instance:regression.InventoryCategoryTest@5f683daf]" name="verifyUserCanEditExistingCategory" duration-ms="12124" started-at="2022-12-11T21:47:47 IST" finished-at="2022-12-11T21:47:59 IST">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
-  (Session info: headless chrome=108.0.5359.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-D2GVCL39', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 434531bfdcbac58b3812697301ce3d9c
-*** Element info: {Using=name, value=email}]]>
+              <![CDATA[The following asserts failed:
+Edited category is not displayed on category page expected [true] but found [false],
+Old category name is still displayed expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
-  (Session info: headless chrome=108.0.5359.99)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Edited category is not displayed on category page expected [true] but found [false],
+Old category name is still displayed expected [false] but found [true]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at regression.InventoryCategoryTest.verifyUserCanEditExistingCategory(InventoryCategoryTest.java:58)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanEditExistingCategory -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterMethod" is-config="true" duration-ms="702" started-at="2022-12-11T21:47:59 IST" finished-at="2022-12-11T21:47:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserCanEditExistingCategory status=FAILURE method=InventoryCategoryTest.verifyUserCanEditExistingCategory()[pri:4, instance:regression.InventoryCategoryTest@5f683daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-12-11T21:47:59 IST" finished-at="2022-12-11T21:47:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.InventoryCategoryTest.successBannerIsDisplayedForEditedCategory()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="successBannerIsDisplayedForEditedCategory()[pri:5, instance:regression.InventoryCategoryTest@5f683daf]" name="successBannerIsDisplayedForEditedCategory" duration-ms="85" started-at="2022-12-11T21:47:59 IST" finished-at="2022-12-11T21:47:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successBannerIsDisplayedForEditedCategory -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-12-11T21:47:59 IST" finished-at="2022-12-11T21:47:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=successBannerIsDisplayedForEditedCategory status=SUCCESS method=InventoryCategoryTest.successBannerIsDisplayedForEditedCategory()[pri:5, instance:regression.InventoryCategoryTest@5f683daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2022-12-11T21:47:59 IST" finished-at="2022-12-11T21:47:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.InventoryCategoryTest.verifyCountIsNotChangedAfterEditingExistingCategory()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyCountIsNotChangedAfterEditingExistingCategory()[pri:6, instance:regression.InventoryCategoryTest@5f683daf]" name="verifyCountIsNotChangedAfterEditingExistingCategory" duration-ms="652" started-at="2022-12-11T21:47:59 IST" finished-at="2022-12-11T21:48:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCountIsNotChangedAfterEditingExistingCategory -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterMethod" is-config="true" duration-ms="1" started-at="2022-12-11T21:48:00 IST" finished-at="2022-12-11T21:48:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCountIsNotChangedAfterEditingExistingCategory status=SUCCESS method=InventoryCategoryTest.verifyCountIsNotChangedAfterEditingExistingCategory()[pri:6, instance:regression.InventoryCategoryTest@5f683daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-12-11T21:48:00 IST" finished-at="2022-12-11T21:48:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.InventoryCategoryTest.verifyExistingCategoryCanBeDeleted()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="verifyExistingCategoryCanBeDeleted()[pri:7, instance:regression.InventoryCategoryTest@5f683daf]" name="verifyExistingCategoryCanBeDeleted" duration-ms="102792" started-at="2022-12-11T21:48:00 IST" finished-at="2022-12-11T21:49:43 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@class,'delete')]"}
+  (Session info: chrome=108.0.5359.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-D2GVCL39', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 434531bfdcbac58b3812697301ce3d9c
-*** Element info: {Using=name, value=email}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edabd8051bba1309a452e5b7f2645123
+*** Element info: {Using=xpath, value=//button[contains(@class,'delete')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(@class,'delete')]"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-D2GVCL39', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edabd8051bba1309a452e5b7f2645123
+*** Element info: {Using=xpath, value=//button[contains(@class,'delete')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -124,21 +260,23 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.uiFramework.KTCTC.common.CommonMethods.loginToApplication(CommonMethods.java:101)
-at com.uiFramework.KTCTC.testbase.TestBase.beforeClassOfA(TestBase.java:49)
+at com.uiFramework.KTCTC.Pages.InventoryCategoryPage.deleteExistingCategoryOnCategoryPage(InventoryCategoryPage.java:117)
+at regression.InventoryCategoryTest.verifyExistingCategoryCanBeDeleted(InventoryCategoryTest.java:83)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
@@ -160,38 +298,109 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserCanUploadFileSuccessFully -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.SampleClass@27a8c74e]" name="afterMethod" is-config="true" duration-ms="-1670687766355" started-at="2022-12-10T21:26:06 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- verifyExistingCategoryCanBeDeleted -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterMethod" is-config="true" duration-ms="488" started-at="2022-12-11T21:49:43 IST" finished-at="2022-12-11T21:49:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyExistingCategoryCanBeDeleted status=FAILURE method=InventoryCategoryTest.verifyExistingCategoryCanBeDeleted()[pri:7, instance:regression.InventoryCategoryTest@5f683daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.SampleClass@27a8c74e]" name="beforeMethod" is-config="true" duration-ms="-1670687766361" started-at="2022-12-10T21:26:06 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2022-12-11T21:49:43 IST" finished-at="2022-12-11T21:49:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.InventoryCategoryTest.verifySuccessBannerIsDisplayedForDeletedCategory()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="verifyUserCanLoginToFacebook()[pri:2, instance:regression.SampleClass@27a8c74e]" name="verifyUserCanLoginToFacebook" duration-ms="0" started-at="2022-12-10T21:26:06 IST" finished-at="2022-12-10T21:26:06 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="verifySuccessBannerIsDisplayedForDeletedCategory()[pri:8, instance:regression.InventoryCategoryTest@5f683daf]" name="verifySuccessBannerIsDisplayedForDeletedCategory" duration-ms="12824" started-at="2022-12-11T21:49:43 IST" finished-at="2022-12-11T21:49:56 IST">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
-  (Session info: headless chrome=108.0.5359.99)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-D2GVCL39', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 434531bfdcbac58b3812697301ce3d9c
-*** Element info: {Using=name, value=email}]]>
+              <![CDATA[The following asserts failed:
+Category deleted Banner is not displayed expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
-  (Session info: headless chrome=108.0.5359.99)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Category deleted Banner is not displayed expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at regression.InventoryCategoryTest.verifySuccessBannerIsDisplayedForDeletedCategory(InventoryCategoryTest.java:94)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessBannerIsDisplayedForDeletedCategory -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterMethod" is-config="true" duration-ms="998" started-at="2022-12-11T21:49:56 IST" finished-at="2022-12-11T21:49:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySuccessBannerIsDisplayedForDeletedCategory status=FAILURE method=InventoryCategoryTest.verifySuccessBannerIsDisplayedForDeletedCategory()[pri:8, instance:regression.InventoryCategoryTest@5f683daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="FAIL" signature="verifyCountIsDecreasedByOneAfterDeletingCategory()[pri:9, instance:regression.InventoryCategoryTest@5f683daf]" name="verifyCountIsDecreasedByOneAfterDeletingCategory" duration-ms="12669" started-at="2022-12-11T21:49:57 IST" finished-at="2022-12-11T21:50:10 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Showing 1')]"}
+  (Session info: chrome=108.0.5359.99)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-D2GVCL39', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59864}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 434531bfdcbac58b3812697301ce3d9c
-*** Element info: {Using=name, value=email}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edabd8051bba1309a452e5b7f2645123
+*** Element info: {Using=xpath, value=//*[contains(text(),'Showing 1')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Showing 1')]"}
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-D2GVCL39', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\91992\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51348}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: edabd8051bba1309a452e5b7f2645123
+*** Element info: {Using=xpath, value=//*[contains(text(),'Showing 1')]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -203,21 +412,23 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
-at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.uiFramework.KTCTC.common.CommonMethods.loginToApplication(CommonMethods.java:101)
-at com.uiFramework.KTCTC.testbase.TestBase.beforeClassOfA(TestBase.java:49)
+at com.uiFramework.KTCTC.Pages.InventoryCategoryPage.getCountOfRecordsOnCategoryPage(InventoryCategoryPage.java:99)
+at regression.InventoryCategoryTest.verifyCountIsDecreasedByOneAfterDeletingCategory(InventoryCategoryTest.java:100)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
-at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:764)
 at org.testng.TestRunner.run(TestRunner.java:585)
@@ -239,20 +450,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUserCanLoginToFacebook -->
-        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.SampleClass@27a8c74e]" name="afterMethod" is-config="true" duration-ms="-1670687766366" started-at="2022-12-10T21:26:06 IST" finished-at="1970-01-01T05:30:00 IST">
+        </test-method> <!-- verifyCountIsDecreasedByOneAfterDeletingCategory -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2022-12-11T21:49:57 IST" finished-at="2022-12-11T21:49:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.InventoryCategoryTest.verifyCountIsDecreasedByOneAfterDeletingCategory()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterMethod" is-config="true" duration-ms="498" started-at="2022-12-11T21:50:10 IST" finished-at="2022-12-11T21:50:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCountIsDecreasedByOneAfterDeletingCategory status=FAILURE method=InventoryCategoryTest.verifyCountIsDecreasedByOneAfterDeletingCategory()[pri:9, instance:regression.InventoryCategoryTest@5f683daf] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:regression.SampleClass@27a8c74e]" name="afterClass" is-config="true" duration-ms="-1670687766372" started-at="2022-12-10T21:26:06 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterClass" is-config="true" duration-ms="1184" started-at="2022-12-11T21:50:10 IST" finished-at="2022-12-11T21:50:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="SKIP" signature="afterSuiteMethod()[pri:0, instance:regression.SampleClass@27a8c74e]" name="afterSuiteMethod" is-config="true" duration-ms="-1670687766459" started-at="2022-12-10T21:26:06 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="afterSuiteMethod()[pri:0, instance:regression.InventoryCategoryTest@5f683daf]" name="afterSuiteMethod" is-config="true" duration-ms="903" started-at="2022-12-11T21:50:12 IST" finished-at="2022-12-11T21:50:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuiteMethod -->
-      </class> <!-- regression.SampleClass -->
+      </class> <!-- regression.InventoryCategoryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,7 +1,11 @@
 package com.uiFramework.KTCTC.Pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.uiFramework.KTCTC.helper.wait.WaitHelper;
@@ -28,17 +32,37 @@ public class InventoryCategoryPage {
 	
 	By deleteButtonOnDeleteConfirmationModal = By.name("delete");
 	By successBannerOfCategoryDeletedSuccessfully = By.xpath("//*[contains(@class,'content')]//div[contains(.,'Category deleted successfully')]");
-	
-	
+		
+	/*
+	 * @FindBy (id="email") WebElement emailTextBox;
+	 * 
+	 * @FindBy(xpath = "//button[contains(@class,'delete')]") WebElement
+	 * passwordtextBox;
+	 * 
+	 * @FindBy (linkText = "loginButton") WebElement loginButton;
+	 * 
+	 * public void loginWithPRovidedCredentials(String uname, String pass) {
+	 * emailTextBox.sendKeys(uname); passwordtextBox.sendKeys(pass);
+	 * loginButton.click(); }
+	 */
 	public InventoryCategoryPage(WebDriver driver)
 	{
 		this.driver = driver;
+		//PageFactory.initElements(driver, this);
 	}
+	/**
+	 * Method navigates user to category page
+	 */
 	public void navigateToInventoryCategoryPage()
 	{
 		driver.findElement(categoryOptionUnderInventory).click();
+		
 	}
 	
+	/**
+	 * This method add new user on category page with provided name
+	 * @param name
+	 */
 	public void addNewCategoryOnCategoryPage(String name)
 	{
 		driver.findElement(newButtonOnCategoryPage).click();
@@ -47,21 +71,40 @@ public class InventoryCategoryPage {
 		
 	}
 	
+	/**
+	 * this method search provided string in search box
+	 * @param name
+	 */
 	public void searchProvidedStringInSearchBox(String name)
 	{
 		clearSearchBoxOnCategoryPage();
 		driver.findElement(searchBoxOnCategoryPage).sendKeys(name);
 	}
 	
+	/**
+	 * This method clear search box
+	 * 
+	 */
 	public void clearSearchBoxOnCategoryPage()
 	{
-		driver.findElement(searchBoxOnCategoryPage).clear();
-		WaitHelper wt = new WaitHelper(driver);
-		wt.waitForElementNotPresent(driver.findElement(By.xpath("//*[contains(text(),'filtered from')]")), 5);
+		String str = driver.findElement(searchBoxOnCategoryPage).getAttribute("value");
+		if (str!=null)
+		{
+			driver.findElement(searchBoxOnCategoryPage).click();
+			for (int i=0;i<str.length();i++)
+			{
+				driver.findElement(searchBoxOnCategoryPage).sendKeys(Keys.BACK_SPACE);
+			}
+			
+		}	
 		
 	}
 	
 	
+	/**
+	 * This method checks if success banner displayed for added category
+	 * @return
+	 */
 	public boolean isSuccessBannerDisplayedForAddedCategory()
 	{
 		boolean flag = false;
@@ -74,6 +117,10 @@ public class InventoryCategoryPage {
 		
 		return flag;		
 	}
+	/**
+	 * This method checks if success banner displayed for edited category
+	 * @return
+	 */
 	public boolean isSuccessBannerDisplayedForEditedCategory()
 	{
 		boolean flag = false;
@@ -86,6 +133,10 @@ public class InventoryCategoryPage {
 		
 		return flag;		
 	}
+	/**
+	 * This method checks if success banner displayed for Deleted category
+	 * @return
+	 */
 	public boolean isSuccessBannerDisplayedForDeletedCategory()
 	{
 		boolean flag = false;
@@ -99,6 +150,10 @@ public class InventoryCategoryPage {
 		return flag;		
 	}
 	
+	/**
+	 * This method returns count of records present on category page
+	 * @return
+	 */
 	public int getCountOfRecordsOnCategoryPage()
 	{
 		clearSearchBoxOnCategoryPage();
@@ -107,6 +162,11 @@ public class InventoryCategoryPage {
 		return Integer.parseInt(actCount);
 	}
 	
+	/**
+	 * This method edit/update existing category
+	 * @param existingCat
+	 * @param newCateName
+	 */
 	public void editExistingCategoryOnCategoryPage(String existingCat, String newCateName)
 	{
 		searchProvidedStringInSearchBox(existingCat);
@@ -117,6 +177,10 @@ public class InventoryCategoryPage {
 		
 	}
 	
+	/**
+	 * This method deletes existing category
+	 * @param existingCat
+	 */
 	public void deleteExistingCategoryOnCategoryPage(String existingCat)
 	{
 		searchProvidedStringInSearchBox(existingCat);
@@ -125,8 +189,14 @@ public class InventoryCategoryPage {
 		
 	}
 	
+	/**
+	 * This method checks if category is present on category page
+	 * @param name
+	 * @return
+	 */
 	public boolean isCategoryPresentOnCategoryPage(String name)
 	{
+		searchProvidedStringInSearchBox(name);
 		boolean flag = false;
 		
 		try {

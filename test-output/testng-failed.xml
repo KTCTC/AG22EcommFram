@@ -11,10 +11,11 @@
           <include name="beforeClassOfA"/>
           <include name="verifySuccessBannerIsDisplayedForDeletedCategory"/>
           <include name="afterClass"/>
-          <include name="verifyUserCanEditExistingCategory"/>
           <include name="afterSuiteMethod"/>
           <include name="beforeMethod"/>
+          <include name="verifyCountIsIncreasedByOneAfterAddigngNewCategory"/>
           <include name="verifyExistingCategoryCanBeDeleted"/>
+          <include name="verifyCountIsNotChangedAfterEditingExistingCategory"/>
         </methods>
       </class> <!-- regression.InventoryCategoryTest -->
     </classes>
